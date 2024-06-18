@@ -65,6 +65,7 @@ header{
     font-size: 3.5rem;
     color: var(--Dark-Blue);
     margin-bottom: 1.8rem;
+    font-weight: var(--Black);
 }
 
 .hero-middle p{
@@ -150,6 +151,7 @@ header{
 
 .advert h2{
     font-size: 2.4rem;
+    font-weight: var(--Black);
     margin: auto;
     margin-bottom: 1.8rem;
     color: var(--Dark-Blue);
@@ -186,7 +188,7 @@ footer{
     justify-content: center;
     align-items: center;
 
-    background:linear-gradient(0deg, #4D96A995,#4D96A995), url(./assets/desktop/image-footer.jpg);
+    background:linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(./assets/desktop/image-footer.jpg);
     background-size: cover;
 
     width: 100%;
@@ -264,7 +266,7 @@ footer span{
         text-align: center;
         gap: 2rem;
         height: 428px;
-        background:linear-gradient(0deg, #4D96A995,#4D96A995), url(./assets/tablet/image-footer.jpg);
+        background:linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(./assets/tablet/image-footer.jpg);
         background-size: cover;
 
     }
@@ -283,7 +285,7 @@ footer span{
     }
 }
 
-@media (max-width:640px){
+@media (max-width:700px){
     .hero-left{
         margin-right: 2rem;
         max-width: 200px;
@@ -340,7 +342,7 @@ footer span{
 
     footer{
         height: 375px;
-        background:linear-gradient(0deg, #4D96A995,#4D96A995), url(./assets/mobile/image-footer.jpg);
+        background:linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(./assets/mobile/image-footer.jpg);
         background-size: cover;
     }
 
