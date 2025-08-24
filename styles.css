@@ -1,0 +1,363 @@
+:root{
+    /* Primary Colors */
+    --Teal: #4D96A9;
+    --Purple: #855FB1;
+    --Dark-Blue: #28283D;
+    --Grey: #87879D;
+    --White: #FAFAFA;
+    --Light-Teal: #8FE3F9;
+    --Light-Purple: #D9B8FF;
+    --Light-Grey: #87879D25;
+    /* Active Colors */
+    --Active-Teal: #71C0D4;
+    --Active-Purple: #B18BDD;
+    /* Fonts */
+    font-size: 18px;
+    --Black: 900;
+    --Medium: 500;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Red Hat Display, sans-serif;
+    background-color: var(--White);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    margin: 3.3rem;
+    text-align: center;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    gap: 4rem;
+    text-align: center;  
+    justify-items: center;  
+    margin-bottom: 7rem;
+}
+
+.hero-left{
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.hero-middle{
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.hero-right{
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
+.hero-middle h1{
+    font-size: 3.5rem;
+    color: var(--Dark-Blue);
+    margin-bottom: 1.8rem;
+    font-weight: var(--Black);
+}
+
+.hero-middle p{
+    font-size: 1rem;
+    color: var(--Grey);
+    margin-bottom: 1.7rem;
+}
+
+.download-button{
+    background-color: var(--Teal);
+    color: var(--White);
+    border: none;
+    padding: .8rem;
+    border-radius: 29px;
+    min-width: 193px;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: var(--Black);
+}
+
+.download-button:hover{
+    background-color: var(--Active-Teal);
+    cursor:grab;
+}
+
+.version{
+    color: var(--Light-Teal);
+}
+
+.about-button{
+    background-color: var(--Purple);
+    color: var(--White);
+    border: none;
+    padding: .8rem;
+    border-radius: 29px;
+    min-width: 139px;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: var(--Black);
+}
+
+.about-button:hover{
+    background-color: var(--Active-Purple);
+    cursor:grab;
+}
+
+.number1{
+    color: var(--Grey);
+    border: solid 1px var(--Light-Grey);
+    border-radius: 50%;
+    padding: 0.8rem;
+    min-width: 56px;
+    min-height: 56px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.vl1{
+    border-left: solid 1px var(--Light-Grey);
+    height: 84px;
+    margin-left: 27px;
+}
+
+.pic{
+    max-height: 255px;
+    border-radius: 10px;
+    margin-left: 1.6rem;
+    margin-bottom: 4.8rem;
+}
+
+.advert{
+    text-align: center;
+    margin-bottom: 7rem;
+    max-width: 500px;
+}
+
+.advert h3{
+    text-transform: uppercase;
+    color: var(--Teal);
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.advert h2{
+    font-size: 2.4rem;
+    font-weight: var(--Black);
+    margin: auto;
+    margin-bottom: 1.8rem;
+    color: var(--Dark-Blue);
+    max-width: 450px;
+}
+
+.advert p{
+    color: var(--Grey);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.number2{
+    color: var(--Grey);
+    border: solid 1px var(--Light-Grey);
+    border-radius: 50%;
+    padding: 0.8rem;
+    min-width: 56px;
+    min-height: 56px;
+    text-align: center;
+    transform: translate(0, 50%);
+    background-color: var(--White);
+}
+
+.vl2{
+    border-left: solid 1px var(--Light-Grey);
+    height: 84px;
+    transform: translate(0, 50%);
+    margin-left: 27px;
+
+}
+
+footer{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(./assets/desktop/image-footer.jpg);
+    background-size: cover;
+
+    width: 100%;
+    height: 310px;
+    color: var(--White);
+}
+
+
+.f-left{
+    font-size: 2.3rem;
+    margin-right: 10rem;
+    font-weight: var(--Black);
+}
+
+.f-center{
+    max-width: 350px;
+    margin-right: 5rem;
+    font-size: 1rem;
+    font-weight: var(--Medium);
+}
+
+.f-right{
+    background-color: var(--Purple);
+    color: var(--White);
+    border: none;
+    padding: .8rem;
+    border-radius: 29px;
+    min-width: 193px;
+    max-height: 58px;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: var(--Black);
+}
+
+.f-right:hover{
+    background-color: var(--Active-Purple);
+    cursor:grab;
+}
+
+footer span{
+    color: var(--Light-Purple);
+}
+
+
+@media (max-width:1200px){
+    .hero{
+        display: block;
+    }
+
+    .hero-left{
+        margin-right: 2rem;
+        max-width: 300px;
+    }
+
+    .hero-right{
+        max-width: 300px;
+    }
+
+    .hero-middle{
+        margin-top: 4rem;
+    }
+
+    .hero-middle p{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 1.8rem;
+    }
+
+    .pic{
+        max-height: 140px;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        height: 428px;
+        background:linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(./assets/tablet/image-footer.jpg);
+        background-size: cover;
+
+    }
+
+    .f-left{
+        margin-right: 0;
+    }
+
+    .f-right{
+        margin-right: 0;
+    }
+
+    .f-center{
+        margin-right: 0;
+        max-width: 600px;
+    }
+}
+
+@media (max-width:700px){
+    .hero-left{
+        margin-right: 2rem;
+        max-width: 200px;
+    }
+
+    .hero-right{
+        max-width: 200px;
+    }
+
+    .hero-middle h1{
+        font-size: 2.2rem;
+    }
+
+    .hero-middle p{
+        font-size: .8rem;
+        max-width: 400px;
+    }
+
+    .download-button{
+        display: block;
+        margin: auto;
+        margin-bottom: 0.8rem;
+    }
+
+    .about-button{
+        display: block;
+        margin: auto;
+    }
+
+    .pic{
+        margin: 0;
+    }
+
+    .gallery{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2rem 4rem;
+    }
+
+    .advert h2{
+        font-size: 1.8rem;
+        max-width: 300px;
+        margin: auto auto 1.8rem;
+    }
+
+    .advert p{
+        font-size: 0.8rem;
+        max-width: 280px;
+        margin: auto;
+    }
+
+    footer{
+        height: 375px;
+        background:linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(./assets/mobile/image-footer.jpg);
+        background-size: cover;
+    }
+
+    .f-left{
+        font-size: 1.8rem;
+    }
+
+    .f-right{
+        max-width: 320px;
+    }
+
+    .f-center{
+        font-size: 1rem;
+    }
+}
